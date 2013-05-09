@@ -1,0 +1,105 @@
+body {
+	background:#333;
+	color:#888;
+	font-family:'Press Start 2P',sans-serif;
+	font-size:12pt;
+}
+
+table {
+	border-collapse:collapse;
+}
+
+td {
+	width:15px;
+	height:15px;
+	font-size:0;
+	text-align:center;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border:none;
+}
+
+#fancyColors {
+	display:inline-block;
+}
+
+#fancyColors button {
+	color:transparent;
+	padding:0;
+	margin:0;
+	border:none;
+	width: 35px;
+	height:20px;
+	box-sizing: content-box;
+}
+
+#fancyColors button:active {
+	background:white !important;
+}
+
+input.color {
+	border: none;
+	font-size:0;
+	width:60px;
+	height:20px;
+	vertical-align:5px;
+	box-sizing: content-box;
+	padding:0;
+}
+
+#main{
+	width: 1090px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.stats{
+	float:right;
+	margin-left:40px;
+}
+
+.stats a {
+	text-decoration:none;
+	color:#333;
+	text-shadow:
+		 1px 0   0px rgba(0,150,255,0.4),
+		-1px 0   0px rgba(0,150,255,0.4),
+		 0   1px 0px rgba(0,150,255,0.4),
+		 0  -1px 0px rgba(0,150,255,0.4);
+}
+
+.stats a:hover {
+	color:rgb(128,255,255);
+	text-shadow: 0 0 6px rgba(0,255,255,1.0);
+	animation: flicker 0.06s linear 0 infinite alternate none;
+	-webkit-animation: flicker 0.06s linear 0 infinite alternate none;
+	-mozilla-animation: flicker 0.06s linear 0 infinite alternate none;
+}
+
+@-webkit-keyframes flicker {
+	from {
+		text-shadow: 0 0 6px rgba(0,255,255,1.0);
+		color:rgb(128,255,255);
+	}
+	
+	to {
+		text-shadow: 0 0 3px rgba(0,255,255, 1.0);
+		color:rgb(64,200,255);
+	}
+}
+
+@-mozilla-keyframes flicker {
+	from {
+		text-shadow: 0 0 6px rgba(0,255,255,1.0);
+		color:rgb(128,255,255);
+	}
+	
+	to {
+		text-shadow: 0 0 3px rgba(0,255,255, 1.0);
+		color:rgb(64,200,255);
+	}
+}
