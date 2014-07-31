@@ -5,7 +5,7 @@ Like the original Pixel Party (http://pixelparty.me/) but with websockets instea
 
 HTML and Javascript borrowed from http://pixelparty.me/. Websocket code borrowed from https://github.com/extend/cowboy.
 
-To compile this you need rebar in your PATH.
+To compile this you need rebar (https://github.com/rebar/rebar) in your PATH.
 
 Type the following command:
 ```
